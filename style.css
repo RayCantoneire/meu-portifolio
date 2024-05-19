@@ -1,0 +1,288 @@
+
+/* ESTILO GERAL */
+
+/* Remove margens e paddings padrões, define a fonte */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Define a cor de fundo e altura do body */
+body{
+    background-color: burlywood;
+    height: 100vh;
+}
+
+/* Define a largura máxima da interface e centraliza */
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo flexível */
+.flex{
+    display: flex;
+}
+
+/* Estilo para botões de contato */
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: cadetblue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilo para títulos */
+h2.titulo{
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Cor azul para span dentro do título */
+h2.titulo span{
+    color: blue;
+}
+
+/* ESTILO CABEÇALHO */
+
+/* Padding para o cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+/* Estilo flexível para a interface dentro do cabeçalho */
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para links no cabeçalho */
+header a{
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* Efeito hover para links no cabeçalho */
+header a:hover{
+    color: aqua;
+    transform: scale(1.05);
+}
+
+/* Remove estilo de lista padrão */
+header nav ul{
+    list-style-type: none;
+}
+
+/* Estilo para itens da lista no cabeçalho */
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Efeito hover para botões de contato e envio */
+.btn-contato button:hover, .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(107, 158, 159);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+/* Padding para a seção do topo do site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+/* Estilo flexível para a seção do topo do site */
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+/* Estilo para o título no topo do site */
+.topo-do-site h1{
+    font-size: 42px;
+    line-height: 40px;
+}
+
+/* Margem para o parágrafo na seção do topo do site */
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+}
+
+/* Animação para a imagem no topo do site */
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Keyframes para a animação de flutuação */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DA FORMAÇÃO */
+
+/* Padding para a seção de formação */
+section.formacao{
+    padding: 40px 4%;
+}
+
+/* Estilo flexível para a seção de formação */
+section.formacao .flex{
+    gap: 60px;
+}
+
+/* Estilo para caixas de formação */
+.formacao .formacao-box{
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #8a898948;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+/* Efeito hover para caixas de formação */
+.formacao .formacao-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #749fd8;
+}
+
+/* Estilo para ícones nas caixas de formação */
+.formacao .formacao-box i{
+    font-size: 58px;
+    color: darkblue;
+}
+
+/* Estilo para títulos nas caixas de formação */
+.formacao .formacao-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO PORTFOLIO */
+
+/* Padding para a seção de portfólio */
+section.portfolio{
+    padding: 40px 4%;
+}
+
+/* Estilo flexível para a seção de portfólio */
+section.portfolio .flex{
+    gap: 60px;
+}
+
+/* Estilo para caixas de portfólio */
+.portfolio .portfolio-box{
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #8a898948;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+/* Efeito hover para caixas de portfólio */
+.portfolio .portfolio-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #749fd8;
+}
+
+/* Estilo para ícones nas caixas de portfólio */
+.portfolio .portfolio-box i{
+    font-size: 58px;
+    color: darkblue;
+}
+
+/* Estilo para títulos nas caixas de portfólio */
+.portfolio .portfolio-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO FORMULARIO DE CONTATO */
+
+/* Padding para a seção de formulário */
+section.formulario{
+    padding: 80px 4%;
+}
+
+/* Estilo para o formulário */
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;    
+}
+
+/* Estilo para inputs e textarea no formulário */
+form input, form textarea{
+    width: 100%;
+    background-color: #00000032;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+/* Estilo para placeholders */
+form input::placeholder{
+    color: blue;
+}
+
+/* Restrições de redimensionamento para textarea */
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+/* Estilo para o botão de enviar */
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para o input de envio */
+form .btn-enviar input{
+    width: 120px;
+    background-color: cadetblue;
+    color: black;
+    font-size: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO RODAPE */
+
+/* Padding para o rodapé */
+footer{
+    padding: 40PX 4%;
+}
+
+/* Estilo flexível para o rodapé */
+FOOTER .flex{
+    justify-content: space-between;
+}
+
+/* Estilo para o texto de observação no rodapé */
+footer .observacao p{
+    font-size: 20px;
+}
